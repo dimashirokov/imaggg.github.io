@@ -111,9 +111,16 @@ div {
 	height: 100vh;
 }
 
+.center {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 .vizit {
-	left: 30%;
-	margin-top: 10%;
+	/*left: 30%;
+	margin-top: 10%; */
+
 	display: block;
 	position: relative;
 	width: 570px;
