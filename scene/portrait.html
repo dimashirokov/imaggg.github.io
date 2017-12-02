@@ -4,12 +4,17 @@
         <meta charset="UTF-8">
         <meta name="description" content="WIP">
         <meta name="author" content="imaggg">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
         <title>imaggg`s photogtaphy</title>
         <link href="../css/main.css" rel="stylesheet">
 
         <link rel="stylesheet" href="../css/photoswipe.css">
         <link rel="stylesheet" href="../img/default-skin/default-skin.css">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
     </head>
     <body class="fullscreen-bg" style="background: #F4F4F4">
         <section id="home">
@@ -41,7 +46,28 @@
             </div>
         </section>
         <section id="right">
-            <section id="photos" temscope itemtype="http://schema.org/ImageGallery">
+            <div data-nanogallery2='{
+        "userID": "145417732@N05",
+        "kind": "flickr",
+        "whiteList": "Portrait",
+        "thumbnailWidth": "auto",
+        "colorScheme": {
+          "thumbnail": {
+            "borderColor": "rgba(255,255,255,1)"
+          }
+        },
+        "thumbnailLabel": {
+          "display": false
+        },
+        "allowHTMLinData": true,
+        "thumbnailHoverEffect2": "descriptionSlideUp|labelSlideUp|imageScaleIn80",
+        "thumbnailAlignment": "center",
+        "gallerySorting": "titleasc",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false
+      }'>
+            <!--<section id="photos" temscope itemtype="http://schema.org/ImageGallery">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
@@ -77,7 +103,7 @@
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" itemprop="contentUrl" data-size="1600x1034"><img src="https://c1.staticflickr.com/5/4550/24445686818_ed7e76f965_h.jpg" alt="pretty kitty"></a></figure>
-            </section>
+            </section>-->
         </section>
 
         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -147,8 +173,6 @@
 
         <script src="../js/photoswipe.min.js"></script>
         <script src="../js/photoswipe-ui-default.min.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="../js/scvirt.js"></script>
         </script>
     </body>
