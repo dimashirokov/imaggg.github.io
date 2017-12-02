@@ -73,12 +73,12 @@ div {
 	padding-bottom: 60%;
 	text-align: center;
 	text-decoration: none;
-	font-size: 112.5%;
+	font-size: 1.5vw;
 	list-style: none;
 }
 
 #footer {
-	font-size: 80%;
+	font-size: 1vw;
 	color: #272726;
 	margin: 0;
 	padding: 0;
@@ -168,7 +168,7 @@ div {
 	position: absolute;
 	left: 5%;
 	top: 10%;
-	font-size: 140%;
+	font-size: 1.7vw;
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
