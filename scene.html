@@ -5,14 +5,14 @@
         <meta name="description" content="35mm photoblog">
         <meta name="author" content="imaggg">
         <title>imaggg`s photogtaphy</title>
-        <link rel="stylesheet" href="css/mmg.css">
         <link href="css/main.css" rel="stylesheet">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollstop.min.js"></script>
-        <script type="text/javascript" src="js/underscore-min.js"></script>
-        <script type="text/javascript" src="js/moon-mega-grid.min.js"></script>
-        <link rel="stylesheet" href="css/classica.min.css">
-        <script type="text/javascript" src="js/classica.min.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery.nanogallery2.min.js"></script>
     </head>
     <body style="background: #F4F4F4">
         <section id="home">
@@ -21,7 +21,7 @@
                 <nav class="navigation">
                     <ul id="inulscene">
                         <li>
-                            <a href="index.html"><img src="img/arrow.png"> main</a>
+                            <a href="index.html"><i class="fa fa-arrow-up " style="color: #464646" aria-hidden="true"></i> main</a>
                         </li>
                         <li>
                             <a href="scene/portrait.html#nanogallery/my_nanogallery/72157663239865668">portrait</a>
@@ -47,9 +47,32 @@
             </div>
         </section>
         <section id="right">
-            <div id="container">
-                <script type="text/javascript" src="js/parser.js"></script>
-            </div>
+            <div id="nanogallery2" data-nanogallery2='{
+        "userID": "145417732@N05",
+        "kind": "flickr",
+        "photoset": "none",
+        "thumbnailWidth": "250",
+        "thumbnailHeight": "auto",
+        "viewerToolbar":{
+            "standard": "infoButton"
+        },
+        "viewerTools": {
+            "topLeft": "pageCounter",
+            "topRight": "closeButton"
+        },
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        
+        "thumbnailLabel": {
+          "position": "overImageOnMiddle",
+          "display": false
+        },
+        "allowHTMLinData": true,
+        "thumbnailAlignment": "center",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false
+      }'>
         </section>
     </body>
 </html>
