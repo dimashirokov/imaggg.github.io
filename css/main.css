@@ -83,7 +83,6 @@ div {
 	text-decoration: none;
 	font-size: 1.5vw;
 	list-style: none;
-	text-align: center;
 }
 
 #footer {
@@ -130,6 +129,7 @@ div {
     justify-content: center;
     height: 100%;
 }
+
 .vizit {
 	display: block;
 	position: relative;
@@ -225,3 +225,72 @@ div {
 	float: left;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	#inulscene {
+	position: relative;
+	top: 10vh;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	padding-bottom: 10vh;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2vw;
+	list-style: none;
+}
+
+#inul {
+	font-size: 2vw;
+	position: relative;
+	top: 30vh;
+	margin: 0;
+	padding: 0;
+} 
+
+.abo {
+	text-align: left;
+
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	#inulscene {
+	position: relative;
+	top: 10vh;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	padding-bottom: 10vh;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2vw;
+	list-style: none;
+}
+
+#inul {
+	font-size: 2vw;
+	position: relative;
+	top: 30vh;
+	margin: 0;
+	padding: 0;
+} 
+
+.abo {
+	text-align: left;
+
+}
+
+}
