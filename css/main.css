@@ -46,8 +46,7 @@ div {
 
 #inul {
 	font-size: 1.5vw;
-	position: absolute;
-	left: 4.5vw;
+	position: relative;
 	top: 30vh;
 	margin: 0;
 	padding: 0;
@@ -70,8 +69,7 @@ div {
 }
 
 #inulscene {
-	position: absolute;
-	left: 3.5vw;
+	position: relative;
 	top: 10vh;
 	margin: 0;
 	padding: 0;
@@ -289,6 +287,7 @@ div {
 } 
 
 .abo {
+	font-size: 1.8vw;
 	text-align: left;
 
 }
