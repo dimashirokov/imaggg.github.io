@@ -12,6 +12,12 @@ body {
 	margin: 0;
 }
 
+.logo {
+	position: relative;
+	width: 9vw;
+	bottom: 12vh;
+}
+
 .fullscreen-bg {
   background: url(https://c1.staticflickr.com/5/4375/37158438046_cd75fe599f_h.jpg) no-repeat;
   background-size: cover;
@@ -46,7 +52,7 @@ div {
 #inul {
 	font-size: 1.5vw;
 	position: relative;
-	top: 30vh;
+	top: 15vh;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -87,20 +93,13 @@ div {
 	padding: 0;
 }
 
-.frfoot {
-	position: absolute;
-	bottom: 1vh;
-	left: 1vw;
-	margin: 0;
-	padding: 0;
-}
-
 .secfoot {
-	position: absolute;
-	bottom: 1vh;
-	right: 1vw;
+	position: fixed;
+	font-size: 1.3vw;
 	margin: 0;
 	padding: 0;
+	bottom: 1vh;
+	left: 6vw;
 }
 
 .maincont a {
@@ -236,6 +235,10 @@ div {
 .abo {
 	font-size: 2.5vw;
 }
+
+.secfoot {
+	font-size: 2vw;
+}
 }
 
 @media only screen 
@@ -249,5 +252,9 @@ div {
 
 .abo {
 	font-size: 2.5vw;
+}
+
+.secfoot {
+	font-size: 2vw;
 }
 }
