@@ -5,7 +5,6 @@
 	font-weight: normal;
 }
 
-
 body {
 	font-family: "Century Gothic";
 	color: #2f2f2f;
@@ -65,7 +64,6 @@ div {
 .abo {
 	font-size: 1.3vw;
 	text-align: left;
-
 }
 
 #inulscene {
@@ -76,11 +74,10 @@ div {
 }
 
 .navigation li {
+	position: relative;
 	padding-bottom: 10vh;
 	text-align: center;
-	text-decoration: none;
 	font-size: 1.5vw;
-	list-style: none;
 }
 
 #footer {
@@ -228,68 +225,29 @@ div {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-  	#inulscene {
-	position: relative;
-	top: 10vh;
-	margin: 0;
-	padding: 0;
-}
+ #back {
+ 	width: 17vw;
+ }
 
 .navigation li {
-	padding-bottom: 10vh;
-	text-align: center;
-	text-decoration: none;
-	font-size: 2vw;
-	list-style: none;
+	font-size: 3vw;
 }
-
-#inul {
-	font-size: 2vw;
-	position: relative;
-	top: 30vh;
-	margin: 0;
-	padding: 0;
-} 
 
 .abo {
-	text-align: left;
-
+	font-size: 2.5vw;
 }
-
 }
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-  	#inulscene {
-	position: relative;
-	top: 10vh;
-	margin: 0;
-	padding: 0;
-}
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 .navigation li {
-	padding-bottom: 10vh;
-	text-align: center;
-	text-decoration: none;
-	font-size: 2vw;
-	list-style: none;
+	font-size: 2.5vw;
 }
-
-#inul {
-	font-size: 2vw;
-	position: relative;
-	top: 30vh;
-	margin: 0;
-	padding: 0;
-} 
 
 .abo {
-	font-size: 1.8vw;
-	text-align: left;
-
+	font-size: 2.5vw;
 }
-
 }
