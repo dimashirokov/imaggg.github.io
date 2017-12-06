@@ -19,10 +19,85 @@ body {
 }
 
 .fullscreen-bg {
-  background: url(https://c1.staticflickr.com/1/640/32365768741_e791f1bed7_h.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 15vw;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.fullscreen-bg > .slide-first,
+.fullscreen-bg > .slide-second,
+.fullscreen-bg > .slide-third,
+.fullscreen-bg > .slide-fourth { 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	background-position: 10vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slide-first {background-image: url(https://c1.staticflickr.com/5/4375/37158438046_cd75fe599f_h.jpg);}
+
+.slide-second {background-image: url(https://c1.staticflickr.com/1/720/33251486305_d1404e5699_h.jpg);}
+
+.slide-third {background-image: url(https://c1.staticflickr.com/1/688/32365767151_46cf65040d_h.jpg);}
+
+.slide-fourth {background-image: url(https://c1.staticflickr.com/5/4585/38783184632_071b451a23_h.jpg);}
+
+.fullscreen-bg > .slide-first {
+	-webkit-animation: slide1 100s;
+	-webkit-animation-iteration-count: infinite;
+}
+.fullscreen-bg > .slide-second {
+	-webkit-animation: slide2 100s;
+	-webkit-animation-iteration-count: infinite;
+}
+.fullscreen-bg > .slide-third {
+	-webkit-animation: slide3 100s;
+	-webkit-animation-iteration-count: infinite;
+}
+.fullscreen-bg > .slide-fourth {
+	-webkit-animation: slide4 100s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slide1 {
+	0% {opacity: 1;}
+	/*2.5% {opacity: 1;}*/
+	22.5% {opacity: 1;}
+	25% {opacity: 0;}
+	95% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes slide2 {
+	22.5% {opacity: 0;}
+	25% {opacity: 1;}
+	27.5% {opacity: 1;}
+	47.5% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+@-webkit-keyframes slide3{
+	47.5% {opacity: 0;}
+	50% {opacity: 1;}
+	52.5% {opacity: 1;}
+	72.5% {opacity: 1;}
+	75% {opacity: 0;}
+	
+}
+
+@-webkit-keyframes slide4 {
+	0% {opacity: 0;}
+	72.5% {opacity: 0;}
+	75% {opacity: 1;}
+	77.5% {opacity: 1;}
+	97.5% {opacity: 1;}
+	100% {opacity: 0;}
 }
 
 a {
