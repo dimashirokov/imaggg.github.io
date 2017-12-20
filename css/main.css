@@ -1,4 +1,18 @@
 @font-face {
+	font-family: "Prestige";
+	src: url("../fonts/Prestige.otf") format("opentype"); 
+	font-style: normal; 
+	font-weight: normal;
+}
+
+body {
+	font-family: "Prestige";
+	color: #2f2f2f;
+	padding: 0;
+	margin: 0;
+}
+
+/*@font-face {
 	font-family: "Century Gothic";
 	src: url("../fonts/Gothic.ttf") format("truetype"); 
 	font-style: normal; 
@@ -10,7 +24,7 @@ body {
 	color: #2f2f2f;
 	padding: 0;
 	margin: 0;
-}
+} */
 
 .logo {
 	position: relative;
@@ -210,7 +224,6 @@ div {
 }
 
 .crutch {
-	font-family: "Century Gothic";
 	position: absolute;
 	top: -30px;
 	right: -5px;
