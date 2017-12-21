@@ -36,9 +36,16 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 
+	background-image: url(https://c1.staticflickr.com/5/4375/37158438046_cd75fe599f_h.jpg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: 10vw;
+	background-repeat: no-repeat;
+	
 }
 
-.fullscreen-bg > .slide-first,
+/*.fullscreen-bg > .slide-first,
 .fullscreen-bg > .slide-second,
 .fullscreen-bg > .slide-third,
 .fullscreen-bg > .slide-fourth { 
@@ -78,6 +85,7 @@ body {
 	-webkit-animation: slide4 100s;
 	-webkit-animation-iteration-count: infinite;
 }
+*/
 
 @-webkit-keyframes slide1 {
 	0% {opacity: 1;}
