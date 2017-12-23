@@ -85,11 +85,11 @@ body {
 	-webkit-animation: slide4 100s;
 	-webkit-animation-iteration-count: infinite;
 }
-*/
+
 
 @-webkit-keyframes slide1 {
 	0% {opacity: 1;}
-	/*2.5% {opacity: 1;}*/
+	/*2.5% {opacity: 1;}* /
 	22.5% {opacity: 1;}
 	25% {opacity: 0;}
 	95% {opacity: 0;}
@@ -121,6 +121,7 @@ body {
 	97.5% {opacity: 1;}
 	100% {opacity: 0;}
 }
+*/
 
 a {
 	text-decoration: none;
