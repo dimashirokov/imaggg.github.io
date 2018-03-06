@@ -103,6 +103,15 @@ div {
 	padding: 0;
 }
 
+.secfoot1 {
+	position: fixed;
+	font-size: 1.3vw;
+	margin: 0;
+	padding: 0;
+	bottom: 1vh;
+	left: 4vw;
+}
+
 .secfoot {
 	position: fixed;
 	font-size: 1.3vw;
@@ -248,6 +257,11 @@ div {
 .secfoot {
 	font-size: 2vw;
 }
+
+.secfoot1 {
+	font-size: 2vw;
+}
+
 }
 
 @media only screen 
@@ -266,4 +280,9 @@ div {
 .secfoot {
 	font-size: 2vw;
 }
+
+.secfoot1 {
+	font-size: 2vw;
+}
+
 }
