@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
 	font-family: "Prestige";
 	src: url("../fonts/Prestige.otf") format("opentype"); 
 	font-style: normal; 
@@ -109,7 +109,7 @@ div {
 	margin: 0;
 	padding: 0;
 	bottom: 1vh;
-	left: 4vw;
+	left: 5vw;
 }
 
 .secfoot {
