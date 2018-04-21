@@ -260,6 +260,18 @@ figure {
 }
 
 
+.caffenol {
+	position: absolute;
+	left: 17vw;
+	top: 50vh;
+}
+
+.blog_font {
+	position: absolute;
+	left: 17vw;
+	top: 10vh;
+}
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
