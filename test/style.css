@@ -1,0 +1,122 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	color: #ffffff;
+	padding-top: 0.51vw;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #080808;
+	background: url(img/background.png);
+}
+
+.h1 {
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+}
+
+.h2 {
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+}
+
+.h3 {
+	font-size: 12px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	width: 40px;
+	height: 20px;
+	margin-top: 40px;
+	margin-left: 4.39vw;
+	margin-bottom: 4.39vw;
+}
+
+.menu {
+	margin-left: 4.39vw;
+	width: 160px;
+	height: 340px
+
+}
+
+.nav {
+	margin: 0px;
+	padding-bottom: 4.39vw;
+	list-style-type: none;
+}
+
+.copy {
+	position: absolute;
+	bottom: 2.92vw;
+	margin-left: 4.39vw;
+	font-size: 10px;
+}
+.album_main {
+	position: absolute;
+	bottom: 2.92vw;
+	right: 13.17vw;
+	height: 21.22vw;
+	width: 50.51vw;
+}
+
+.amore {
+	position: absolute;
+	bottom: 0;
+	width: 50.51vw;
+	height: 2.19vw;
+	background-color: #101010;
+	text-align: center;
+}
+
+.amore:hover {
+	background-color: #121212;
+}
+
+.amore:active {
+	background-color: #141414;
+}
+
+.apic {
+	position: absolute;
+	width: 50.51vw;
+	height: 21.22vw;
+}
+
+.apicin {
+	float: left;
+	margin-right: 8.78vw;
+	width: 10.98vw;
+	height: 16.10vw;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.desc {
+	position: absolute;
+	bottom: 70px;
+	background: rgba(0, 0, 0, 0.7);
+	width: 150px;
+	height: 30px;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 12px;
+}
