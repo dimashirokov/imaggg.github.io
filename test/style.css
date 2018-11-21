@@ -101,11 +101,18 @@ a {
 }
 
 .logo {
-	width: 2.92vw;
-	height: 1.46vw;
 	margin-top: 2.92vw;
 	margin-left: 4.39vw;
 	margin-bottom: 4.39vw;
+}
+
+.log {
+	width: 2.92vw;
+	height: 1.46vw;
+}
+
+.burger {
+	display: none;
 }
 
 .menu {
@@ -172,6 +179,7 @@ a {
 }
 
 .desc {
+	z-index: 1;
 	position: absolute;
 	bottom: 0px;
 	background: rgba(0, 0, 0, 0.7);
@@ -180,4 +188,68 @@ a {
 	font-weight: 500;
 	text-decoration: none;
 	font-size: 12px;
+}
+
+.sel {
+	position: absolute;
+	width: 20px;
+	height: 8px;
+	background-color: #ffffff;
+	left: 198px;
+	margin-top: 4px;
+}
+
+.aboit {
+	position: absolute;
+	width: 42.16vw;
+	height: 22.40vw;
+	left: 36.31VW;
+	top: 8.78VW;
+}
+
+.aboutxt {
+	position: absolute;
+	width: 210px;
+	height: 130px;
+	top: 0;
+	left: 0;
+	font-weight: 500;
+	line-height: 23px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo {
+	margin: 0;
+	background-color: #fff;
+	position: absolute;
+	width: 414px;
+	height: 75px;
+}
+
+.burger {
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 10px;
+	top: 6.66vw;
+	right: 8vw;
+}
+
+.nav {
+	display: none;
+}
+
+.bg_box {
+	display: none;
+}
 }
