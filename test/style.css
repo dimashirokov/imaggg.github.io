@@ -7,7 +7,7 @@ p {
 	color: #ffffff;
 	text-decoration: none;
 	position: absolute;
-	
+
 }
 
 body {
@@ -98,17 +98,17 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #eee;
 }
 
 .logo {
 	margin-top: 2.92vw;
 	margin-left: 4.39vw;
 	margin-bottom: 4.39vw;
-}
-
-.log {
-	width: 2.92vw;
-	height: 1.46vw;
 }
 
 .burger {
@@ -119,12 +119,14 @@ a {
 	margin-left: 4.39vw;
 	width: 160px;
 	height: 340px
-
 }
 
 .nav {
 	margin: 0px;
 	padding-bottom: 4.39vw;
+}
+
+li {
 	list-style-type: none;
 }
 
@@ -219,8 +221,166 @@ a {
 	text-align-last: justify;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+.imga {
+	position: inherit;
+	top: 0;
+	right: 0;
+}
+
+.block {
+	display: none;
+}
+
+.hash_box {
+	position: absolute;
+	width: 46.19vw;
+	height: 1.24vw;
+	left: 22.4vw;
+	top: 3.14vw;
+}
+
+.hash {
+	text-transform: lowercase;
+	margin-right: 4.39vw;
+	color: #ffffff;
+	float: left;
+}
+
+.scene_in {
+	position: absolute;
+	width: 73.20vw;
+	top: 8.78vw;
+	left: 20vw;
+}
+
+.friend_box {
+	position: absolute;
+	width: 73.20vw;;
+	height: 10.98vw;
+	left: 22.4vw;
+	top: 8.78vw;
+}
+
+.friend_txt {
+
+}
+
+.friend_img_box {
+	position: absolute;
+	width: 60.76vw;
+	height: 10.98vw;
+	right: 0;
+}
+
+.fr_more {
+	text-align: center;
+	line-height: 10.98vw;
+	position: absolute;
+	width: 10.98vw;
+	height: 10.98vw;
+	right: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(180deg, #1491B9 0%, #4AD7CE 100%);
+}
+
+.blog_box {
+	position: absolute;
+	left: 22.4vw;
+	top: 8.78vw;
+}
+
+.blog_box_in {
+	float: left;
+	margin-right: 1.46vw;
+	width: 10.98vw;
+	height: 16.10vw;
+	background-color: inherit;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.social_box {
+	position: absolute;
+	width: 20.49vw;
+	height: 20.49vw;
+	left: 59.7vw;
+	top: 8.7vw;
+}
+
+.be {
+	position: absolute;
+	background: #1769FF;
+	width: 5.85vw;
+	height: 5.85vw;
+	top: 14.64vw;
+	right: 0;
+}
+
+.vk {
+	position: absolute;
+	background: #45668E;
+	width: 5.85vw;
+	height: 5.85vw;
+	top: 14.64vw;
+	left: 7.32vw;
+}
+
+.f {
+	position: absolute;
+	background: #3B5998;
+	width: 5.85vw;
+	height: 5.85vw;
+	top: 14.64vw;
+	left: 0;
+}
+
+.fl {
+	position: absolute;
+	background: linear-gradient(90deg, #0063DC 0%, #0063DC 84.34%, #FF0084 84.35%, #FF0084 101.79%);
+	width: 20.49vw;
+	height: 5.85vw;
+	top: 7.32vw;
+
+}
+
+.ins {
+	position: relative;
+	background: radial-gradient(314.06px at 7.68% 100%, #F9ED32 0%, #EE2A7B 62.43%, #002AFF 100%);
+	width: 20.49vw;
+	height: 5.85vw;
+	top: 0;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 375px) {
+
+	.h1 {
+		font-size: 14px;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+	}
+
+	.h2 {
+		font-size: 12px;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+	}
+
+	.h3 {
+		font-size: 11px;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+	}
+
+}
+
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 667px) {
 
 * {
@@ -230,26 +390,204 @@ and (max-device-width : 667px) {
 
 .logo {
 	margin: 0;
-	background-color: #fff;
+	background-color: #080808;
 	position: absolute;
-	width: 414px;
+	width: 100%;
 	height: 75px;
 }
 
-.burger {
+.log {
 	position: absolute;
+	left: 7%;
+	margin: 25px 0 25px 0;
+}
+
+.burger {
 	display: block;
-	width: 18px;
-	height: 10px;
-	top: 6.66vw;
-	right: 8vw;
+	position: absolute;
+	right: 7%;
+	margin: 31px 0 30px 0;
+	text-decoration: none;
+}
+
+.menum {
+	position: absolute;
+	top: 28.98vw;
+	left: 40.57vw;
+	width: 18.84vw;
+	height: 80.91vw
+
+}
+
+.navm {
+	margin: 0px;
+	padding-bottom: 14.49vw;
+	list-style-type: none;
+	text-align: center;
 }
 
 .nav {
 	display: none;
+	list-style-type: none;
 }
 
 .bg_box {
-	display: none;
+	position: absolute;
+	width: 76.8VW;
+	height: 48.3VW;
+	top: 21.7vw;
+	left: 11.59vw;
 }
+
+.album_main {
+	position: absolute;
+	left: 7.2vw;
+	top: 28.98vw;
+	width: 85.5vw;
+	height: 133.8vw;
+}
+
+.apicin {
+	display: list-item;
+	float: left;
+	margin-right: 13.04vw;
+	margin-bottom: 8.21vw;
+	width: 36.23vw;
+	height: 53.14vw;
+	background-color: inherit;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+	list-style-type: none;
+}
+
+.block {
+	display: block;
+}
+
+.amore {
+	height: 7.2vw
+}
+
+.desc {
+	z-index: 1;
+	position: relative;
+	bottom: 7.2vw;
+	background: rgba(0, 0, 0, 0.7);
+	width: inherit;
+	height: 7.2vw;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+footer {
+	position: absolute;
+	margin-bottom: 0;
+	bottom: 0;
+	height: 32px;
+	width: 100%;
+}
+
+.copy {
+	position: absolute;
+	width: 100%;
+	margin-left: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+.aboit {
+	position: absolute;
+	width: 53.14vw;
+	height: 105vw;
+	left: 23.42VW;
+	top: 28.98VW;
+}
+
+.aboutxt {
+	position: absolute;
+	width: 50.72vw;
+	height: 31.40vw;
+	top: 0;
+	font-weight: 500;
+	line-height: 23px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+.imga {
+	position: inherit;
+	bottom: 0;
+	top: auto;
+	right: 0;
+	width: 100%;
+	height: 53.14vw;
+	margin-top: 60px;
+}
+
+.hash_box {
+	position: absolute;
+	width: 79vw;
+	height: 13.04vw;
+	left: 7.24vw;
+	top: 19.32vw;
+}
+
+.hash {
+	text-transform: lowercase;
+	margin-right: 4.83vw;
+	margin-bottom: 20px;
+	color: #ffffff;
+	float: left;
+	top: 19.32vw
+}
+
+.scene_in {
+	position: absolute;
+	width: 85.50vw;
+	top: 42.02vw;
+	left: 7.24vw;
+}
+
+.friend_box {
+	position: absolute;
+	width: 85.50vw;;
+	height: 36.23vw;
+	left: 7.24vw;
+	top: 28.98vw;
+}
+
+.friend_txt {
+
+}
+
+.friend_img_box {
+	position: absolute;
+	width: 60.76vw;
+	height: 10.98vw;
+	right: 0;
+}
+
+.fr_more {
+	text-align: center;
+	line-height: 36.23vw;
+	position: absolute;
+	width: 36.23vw;
+	height: 36.23vw;
+	right: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(180deg, #1491B9 0%, #4AD7CE 100%);
+}
+
+.blog_box {
+	position: absolute;
+	left: 7.24vw;
+	top: 28.98vw;
+}
+
+.blog_box_in {
+	float: left;
+	margin-right: 10.1vw;
+	width: 36.23vw;
+	height: 53.14vw;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
 }
