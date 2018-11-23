@@ -301,7 +301,7 @@ li {
 	position: absolute;
 	width: 20.49vw;
 	height: 20.49vw;
-	left: 59.7vw;
+	left: 33.38vw;
 	top: 8.7vw;
 }
 
@@ -314,18 +314,18 @@ li {
 	right: 0;
 }
 
-.vk {
+.mail {
 	position: absolute;
-	background: #45668E;
+	background: #3E62AD;
 	width: 5.85vw;
 	height: 5.85vw;
 	top: 14.64vw;
 	left: 7.32vw;
 }
 
-.f {
+.vk {
 	position: absolute;
-	background: #3B5998;
+	background: #45668E;
 	width: 5.85vw;
 	height: 5.85vw;
 	top: 14.64vw;
@@ -478,19 +478,16 @@ and (max-device-width : 667px) {
 	font-size: 12px;
 }
 
-footer {
+.footer {
+	margin-top: 20px
 	position: absolute;
-	margin-bottom: 0;
 	bottom: 0;
-	height: 32px;
+	height: 7.72vw;
 	width: 100%;
 }
 
 .copy {
 	position: absolute;
-	width: 100%;
-	margin-left: 0;
-	bottom: 0;
 	text-align: center;
 }
 
@@ -588,6 +585,58 @@ footer {
 	width: 36.23vw;
 	height: 53.14vw;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.social_box {
+	position: absolute;
+	width: 67.63vw;
+	height: 67.63vw;
+	left: 16.18vw;
+	top: 28.98vw;
+}
+
+.be {
+	position: absolute;
+	background: #1769FF;
+	width: 19.32vw;
+	height: 19.32vw;
+	top: 48.3vw;
+	right: 0;
+}
+
+.mail {
+	position: absolute;
+	background: #3E62AD;
+	width: 19.32vw;
+	height: 19.32vw;
+	top: 48.3vw;
+	left: 24.15vw;
+}
+
+.vk {
+	position: absolute;
+	background: #45668E;
+	width: 19.32vw;
+	height: 19.32vw;
+	top: 48.3vw;
+	left: 0;
+}
+
+.fl {
+	position: absolute;
+	background: linear-gradient(90deg, #0063DC 0%, #0063DC 84.34%, #FF0084 84.35%, #FF0084 101.79%);
+	width: 67.63vw;
+	height: 19.32vw;
+	top: 24.15vw;
+
+}
+
+.ins {
+	position: relative;
+	background: radial-gradient(314.06px at 7.68% 100%, #F9ED32 0%, #EE2A7B 62.43%, #002AFF 100%);
+	width: 67.63vw;
+	height: 19.32vw;
+	top: 0;
 }
 
 }
