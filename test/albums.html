@@ -8,12 +8,12 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<div class="bg_box">
+	<div class="bg_box" style="filter: blur(10px);">
 		<div class="bg"></div>
-		<div class="backfilter1"></div>
-		<div class="backfilter2"></div>
-		<div class="backfilter3"></div>
-		<div class="backfilter4"></div>
+			<div class="backfilter1"></div>
+			<div class="backfilter2"></div>
+			<div class="backfilter3"></div>
+			<div class="backfilter4"></div>
 	</div>
 	<div class="logo">
 		<a href="index.html" class="log"><svg width="40" height="20" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,18 +28,17 @@
 		<li class="nav"><a href="blog.html" class="h1">blog</a></li>
 		<li class="nav"><a href="contact.html" class="h1">contact</a></li>
 	</nav>
-	<div class="album_box">
-		<div class="apic">
-			<a href="albums/sasha.html" class="apicin"><img src="img/1.jpg" class="imag">
-				<div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">Sasha</p></div>
-				<div class="desc_hidden"><p>12</p></div>
-			</a>
-			<a href="" class="apicin block" style="margin-right: 0px;"><img src="img/3.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">People</p></div></a>
-			<a href="" class="apicin"><img src="img/2.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">Max</p></div></a>
-			<a href="" class="apicin" style="margin-right: 0px;"><img src="img/3.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">People</p></div></a>
-		</div>
-		<a href="albums.html" class="amore"><p class="h3" style="left: 50%; top: 50%; margin-top: -0.500em; margin-left: -3em;">ALL ALBUMS</p></a>
-	</div>
+  <div class="album_nav">
+    <p class="h1"><a href="index.html">...</a>/Albums</p>
+  </div>
+  <div class="album_full_box">
+    <a href="albums/sasha.html" class="apicin"><img src="img/1.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">Sasha</p></div></a>
+    <a href="" class="apicin"><img src="img/2.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">Max</p></div></a>
+    <a href="" class="apicin" style="margin-right: 0px;"><img src="img/3.jpg" class="imag"><div class="desc"><p style="left: 6%; top: 50%; margin-top: -0.500em;">People</p></div></a>
+
+    <!-- для следующих альбомов добавить класс marg рядом с apicin -->
+
+  </div>
 	<div class="footwrap">
 		<div class="copy h3">Copyright &copy; 2018 imaggg</div>
 	</div>
