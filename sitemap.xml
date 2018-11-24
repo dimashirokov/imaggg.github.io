@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>https://imaggg.github.io/</loc>
+	<lastmod>2018-11-24T17:42:41+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/index.html</loc>
+	<lastmod>2018-11-24T17:42:42+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/menu.html</loc>
+	<lastmod>2018-11-24T17:42:42+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/about.html</loc>
+	<lastmod>2018-11-24T17:42:43+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene.html</loc>
+	<lastmod>2018-11-24T17:42:43+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/friends.html</loc>
+	<lastmod>2018-11-24T17:42:44+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/blog.html</loc>
+	<lastmod>2018-11-24T17:42:44+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/contact.html</loc>
+	<lastmod>2018-11-24T17:42:45+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/albums/sasha.html</loc>
+	<lastmod>2018-11-24T17:42:45+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/albums/concert.html</loc>
+	<lastmod>2018-11-24T17:42:45+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/albums/max.html</loc>
+	<lastmod>2018-11-24T17:42:46+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/albums/abstract.html</loc>
+	<lastmod>2018-11-24T17:42:47+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/albums.html</loc>
+	<lastmod>2018-11-24T17:42:48+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/portrait.html</loc>
+	<lastmod>2018-11-24T17:42:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/landscape.html</loc>
+	<lastmod>2018-11-24T17:42:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/people.html</loc>
+	<lastmod>2018-11-24T17:42:50+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/street.html</loc>
+	<lastmod>2018-11-24T17:42:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/night.html</loc>
+	<lastmod>2018-11-24T17:42:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/scene/bw.html</loc>
+	<lastmod>2018-11-24T17:42:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/blog/rdi.html</loc>
+	<lastmod>2018-11-24T17:42:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://imaggg.github.io/blog/song.html</loc>
+	<lastmod>2018-11-24T17:42:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
