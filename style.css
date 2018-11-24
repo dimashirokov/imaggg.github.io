@@ -9,6 +9,12 @@ p {
   position: absolute;
 }
 
+.p2 {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
 html {
   display: block;
 }
@@ -22,6 +28,7 @@ body {
 .bg_box {
   display: block;
   position: absolute;
+  overflow: visible;
   width: 68.08VW;
   height: 43.04VW;
   top: 4.39vw;
@@ -40,7 +47,7 @@ body {
   z-index: -1;
   position: absolute;
   width: inherit;
-  height: 14.64vw;
+  height: 11.71vw;
   top: 0;
   background: linear-gradient(180deg, #080808 16.57%, rgba(8, 8, 8, 0.1) 77.9%, rgba(8, 8, 8, 0) 100%);
 }
@@ -63,14 +70,60 @@ body {
   background: linear-gradient(0deg, #080808 41.32%, rgba(8, 8, 8, 0.1) 87.85%, rgba(8, 8, 8, 0) 100%);
 }
 
-.bg {
+.bg > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  opacity: 0;
   position: absolute;
   z-index: -2;
   width: 100%;
   height: 100%;
-  background: url(img/4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.bg > figure:nth-child(1) {
+  background-image: url('https://c1.staticflickr.com/5/4426/36129383954_353b97f9cd_c.jpg');
+}
+
+.bg > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('https://c2.staticflickr.com/2/1868/42807682060_7a2c374801_c.jpg');
+}
+
+.bg > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('https://c2.staticflickr.com/2/1828/42607248904_24130ede66_c.jpg');
+}
+
+.bg > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('https://c1.staticflickr.com/1/714/32868509010_ab4cfb2c87_c.jpg');
+}
+
+.bg > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('https://c1.staticflickr.com/5/4375/37158438046_8d1cc6fea3_c.jpg');
+}
+
+
+@keyframes
+imageAnimation {  0% {
+   animation-timing-function: ease-in;
+   opacity: 0;
+  }
+   8% {
+   animation-timing-function: ease-out;
+   opacity: 1;
+  }
+   17% {
+   opacity: 1
+  }
+   25% {
+   opacity: 0
+  }
+   100% {
+   opacity: 0
+  }
 }
 
 .h1 {
@@ -97,6 +150,29 @@ body {
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.h1_blog {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.h2_blog {
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+.h3_blog {
+  font-size: 12px;
+  color: #ffffff;
   letter-spacing: 0.05em;
   text-decoration: none;
 }
@@ -191,10 +267,12 @@ li {
   height: 100%;
 }
 
+
 .desc_hidden {
 	display: none;
 }
 
+/*
 .apicin:hover .desc_hidden{
 	position: absolute;
 	top: 0;
@@ -203,11 +281,13 @@ li {
 	width: 100%;
 	height: 100%;
 }
+*/
 
 .album_nav {
 	position: absolute;
 	left: 26.93vw;
 	top: 2.92vw;
+  width: 10.98vw;
 }
 
 .album_nav_in {
@@ -291,7 +371,7 @@ li {
 .hash_box {
   display: block;
   position: absolute;
-  width: 46.19vw;
+
   height: 1.24vw;
   left: 22.9vw;
   top: 3.14vw;
@@ -345,8 +425,9 @@ li {
 .blog_box {
   display: block;
   position: absolute;
-  left: 22.4vw;
+  left: 24vw;
   top: 8.78vw;
+  width: 71vw;
 }
 
 .blog_box_in {
@@ -408,6 +489,59 @@ li {
   width: 20.49vw;
   height: 5.85vw;
   top: 0;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.bg_box {
+		display: block;
+		position: absolute;
+		width: 90.82VW;
+		height: 57.42VW;
+		top: 5.85vw;
+		left: 36.71vw;
+	}
+
+	.menu {
+	  display: block;
+	  margin-left: 5.85vw;
+	  width: 7.61vw;
+	  height: 32.71vw
+	}
+
+	.logo {
+	  display: block;
+	  margin-top: 3.9vw;
+	  margin-left: 5.85vw;
+	  margin-bottom: 5.85vw;
+	}
+
+	.album_box {
+	  display: block;
+	  position: absolute;
+	  bottom: 3.9vw;
+	  left: 48.43vw;
+	  height: 28.32vw;
+	  width: 67.38vw;
+	}
+
+	.apicin {
+		position: relative;
+	  float: left;
+	  margin-right: 11.71vw;
+	  width: 14.64vw;
+	  height: 21.48vw;
+	  background-color: inherit;
+	  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+	}
+
+	.amore {
+	  position: absolute;
+	  bottom: 0;
+	  width: inherit;
+	  height: 2.92vw;
+	  background-color: #101010;
+	}
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 375px) {
@@ -554,20 +688,24 @@ li {
 	.album_nav_in {
 		position: absolute;
 		left: 7.2vw;
-		top: 19.32vw;
+		top: 28.12vw;
 	}
 
 	.album_in_box {
 		position: absolute;
 		display: block;
-		width: 85.50vw;
+		width: 100%;
 		top: 42.02vw;
-		left: 7.24vw;
+		left: 0;
 	}
 
 	.block {
 		display: block;
 	}
+
+  .block2 {
+    display: none;
+  }
 
 	.amore {
 		height: 7.2vw
@@ -576,10 +714,10 @@ li {
 	.desc {
 		z-index: 1;
 		position: relative;
-		bottom: 7.2vw;
+		bottom: 9.37vw;
 		background: rgba(0, 0, 0, 0.7);
 		width: inherit;
-		height: 7.2vw;
+		height: 9.37vw;
 		font-weight: 500;
 		font-size: 12px;
 	}
@@ -635,9 +773,9 @@ li {
 	.scene_box {
 		display: block;
 		position: absolute;
-		width: 85.50vw;
+		width: 100%;
 		top: 42.02vw;
-		left: 7.24vw;
+		left: 0;
 	}
 
 	.friend_box {
@@ -675,6 +813,7 @@ li {
 		position: absolute;
 		left: 7.24vw;
 		top: 28.98vw;
+    width: 100%;
 	}
 
 	.blog_box_in {
@@ -801,6 +940,31 @@ li {
     left: 11.59vw;
   }
 
+  .bg > figure:nth-child(1) {
+    background-image: url('https://c1.staticflickr.com/5/4426/36129383954_353b97f9cd_n.jpg');
+  }
+
+  .bg > figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('https://c2.staticflickr.com/2/1868/42807682060_7a2c374801_n.jpg');
+  }
+
+  .bg > figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('https://c2.staticflickr.com/2/1828/42607248904_24130ede66_n.jpg');
+  }
+
+  .bg > figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('https://c1.staticflickr.com/1/714/32868509010_ab4cfb2c87_n.jpg');
+  }
+
+  .bg > figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('https://c1.staticflickr.com/5/4375/37158438046_8d1cc6fea3_n.jpg');
+  }
+
+
   .footwrap {
     display: block;
     position: absolute;
@@ -871,6 +1035,10 @@ li {
 
   .block {
     display: block;
+  }
+
+  .block2 {
+    display: none;
   }
 
   .amore {
@@ -978,6 +1146,7 @@ li {
     position: absolute;
     left: 7.24vw;
     top: 28.98vw;
+    width: 94.39vw;
   }
 
   .blog_box_in {

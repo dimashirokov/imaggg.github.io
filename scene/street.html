@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110574320-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110574320-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-110574320-1');
+  </script>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta property="og:image" content="https://c1.staticflickr.com/5/4375/37158438046_8d1cc6fea3_n.jpg" />
 
-          gtag('config', 'UA-110574320-1');
-        </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.woff.min.css" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
 
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> 
-        <meta charset="UTF-8">
-        <meta name="description" content="35mm photoblog">
-        <meta name="author" content="imaggg">
-        <title>imaggg`s photography</title>
-        <link href="../css/main.css" rel="stylesheet">
-        <meta property="og:image" content="https://c1.staticflickr.com/5/4375/37158438046_8d1cc6fea3_z.jpg" />
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.woff.min.css" rel="stylesheet" type="text/css">
-        <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
-    </head>
-    <body class="fullscreen-bg" style="background: #F4F4F4">
-        <section id="home">
-            <div class="container">
-                <div id="back">
-                    <nav class="navigation">
-                        <ul id="inulscene">
-                            <li>
-                                <a href="../scene.html"><span class="u">up</span></a>
-                            </li>
-                            <li>
-                                <a href="../scene/portrait.html#nanogallery/my_nanogallery/72157663239865668">portrait</a>
-                            </li>
-                            <li>
-                                <a href="../scene/landscape.html#nanogallery/my_nanogallery/72157667013519359">landscape</a>
-                            </li>
-                            <li>
-                                <a href="../scene/people.html#nanogallery/my_nanogallery/72157661196932777">people</a>
-                            </li>
-                            <li>
-                                <a href="../scene/night.html#nanogallery/my_nanogallery/72157689883068824">night</a>
-                            </li>
-                            <li>
-                                <a href="../scene/bw.html#nanogallery/my_nanogallery/72157691389186035">b&w</a>
-                            </li>
-                        </ul>
-                    </nav>
-                        <div class="secfoot">2017</div>
-                        </div>
-            </div>
-            </div>
-        </section>
-        <section id="right">
-            <div data-nanogallery2='{
+  <meta name="viewport" content="width=device-width">
+	<meta name="description" content="35mm photoblog">
+	<meta name="author" content="imaggg">
+	<title>imaggg`s photography</title>
+	<link href="../style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="logo">
+		<a href="../index.html" class="log"><svg width="40" height="20" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M9.91114 1V21L20.4243 16.25V5.75L9.91114 1ZM21.5257 5.75V16.25L32.0388 21V1L21.5257 5.75ZM15.6683 5.75V16.25L5.20526 20.05V1.95L15.6683 5.75ZM11.4631 5.75V16.25L1 19.1V2.9L11.4631 5.75ZM26.2816 5.75V16.25L36.7947 20.05V1.95L26.2816 5.75ZM30.4869 5.75V16.25L41 19.1V2.9L30.4869 5.75Z" stroke="white" stroke-width="0.5"/></svg></a>
+			<a href="../menu.html" class="burger h3">menu
+		</a>
+	</div>
+	<nav class="menu">
+		<li class="nav"><a href="../about.html" class="h1">about</a></li>
+		<li class="nav"><div class="sel"></div><a href="../scene.html" class="h1">scene</a></li>
+		<li class="nav"><a href="../friends.html" class="h1">friends</a></li>
+		<li class="nav"><a href="../blog.html" class="h1">blog</a></li>
+		<li class="nav"><a href="../contact.html" class="h1">contact</a></li>
+	</nav>
+  <div class="hash_box">
+    <li class="hash h2"><a href="portrait.html#nanogallery/my_nanogallery/72157663239865668">#portrait</a></li>
+    <li class="hash h2"><a href="landscape.html#nanogallery/my_nanogallery/72157667013519359">#landscape</a></li>
+    <li class="hash h2"><a href="people.html#nanogallery/my_nanogallery/72157661196932777">#people</a></li>
+    <li class="hash h2" style="text-decoration: underline;"><a href="#">#street</a></li>
+    <li class="hash h2"><a href="night.html#nanogallery/my_nanogallery/72157689883068824">#night</a></li>
+    <li class="hash h2"><a href="bw.html#nanogallery/my_nanogallery/72157691389186035">#b&w</a></li>
+    <li class="hash h2"><a href="../scene.html" style="color: #C55252;">clear</a></li>
+  </div>
+  <div class="footwrap">
+		<div class="copy h3">Copyright &copy; 2018 imaggg</div>
+	</div>
+  <div class="scene_box">
+    <div data-nanogallery2='{
                 "userID": "145417732@N05",
                 "kind": "flickr",
-                "thumbnailWidth": "250",
-                "thumbnailHeight": "auto",
+                "thumbnailWidth": "150",
+                "thumbnailHeight": "220",
                 "viewerToolbar":{
                     "standard": "infoButton, linkOriginalButton"
                 },
@@ -68,8 +62,8 @@
                     "topLeft": "pageCounter",
                     "topRight": "closeButton"
                 },
-                "thumbnailBorderVertical": 0,
-                "thumbnailBorderHorizontal": 0,
+                "thumbnailBorderBottom": 10,
+                "thumbnailBorderRight": 20,
                 "thumbnailLabel": {
                   "position": "overImageOnMiddle",
                   "display": false
@@ -81,7 +75,7 @@
                 "breadcrumbAutoHideTopLevel": false,
                 "breadcrumbOnlyCurrentLevel": false
               }'>
-            </section>
-        </section>
-    </body>
+  </div>
+
+</body>
 </html>
