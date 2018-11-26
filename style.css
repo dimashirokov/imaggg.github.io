@@ -51,7 +51,7 @@ body {
   width: inherit;
   height: 11.71vw;
   top: 0;
-  background: linear-gradient(180deg, #080808 16.57%, rgba(8, 8, 8, 0.1) 77.9%, rgba(8, 8, 8, 0) 100%);
+  background: linear-gradient(180deg, #080808 41.32%, rgba(8, 8, 8, 0.1) 87.29%, rgba(8, 8, 8, 0) 100%);
 }
 
 .backfilter3 {
@@ -201,9 +201,17 @@ a:hover {
 
 .menu {
   display: block;
+  position: fixed;
   margin-left: 4.39vw;
   width: 11.97vw;
   height: 25.44vw
+}
+
+.footwrap {
+  position: fixed;
+  bottom: 2.92vw;
+  margin-left: 4.39vw;
+
 }
 
 .nav {
@@ -217,9 +225,6 @@ li {
 }
 
 .copy {
-  position: absolute;
-  bottom: 2.92vw;
-  margin-left: 4.39vw;
   font-size: 10px;
 }
 
@@ -315,7 +320,7 @@ li {
 }
 
 .marg {
-	margin-top: 7.17vw;
+	margin-top: 5vw;
 }
 
 .desc {
@@ -335,7 +340,7 @@ li {
   width: 20px;
   height: 8px;
   background-color: #ffffff;
-  left: 198px;
+  left: 10vw;
   margin-top: 4px;
 }
 
@@ -638,6 +643,7 @@ li {
 	 height: 4.83vw;
 	 top: 170vw;
 	 text-align: center;
+   margin-left: 0;
 	}
 
 	.footer {
@@ -972,6 +978,7 @@ li {
     height: 4.83vw;
     top: 170vw;
     text-align: center;
+    margin-left: 0;
   }
 
   .footer {
