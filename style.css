@@ -399,13 +399,11 @@ li {
   display: block;
   position: absolute;
   width: 73.20vw;
-  ;
   height: 10.98vw;
   left: 22.4vw;
   top: 8.78vw;
+  margin-bottom: 2.99vw;
 }
-
-.friend_txt {}
 
 .friend_img_box {
   position: absolute;
