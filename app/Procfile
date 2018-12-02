@@ -1,1 +1,1 @@
-web: CLOUDINARY_API_KEY=... CLOUDINARY_API_SECRET=... node index.js
+web: node index.js
