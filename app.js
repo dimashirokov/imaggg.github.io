@@ -1,7 +1,7 @@
 var ImagggApi = (function($) {
 
   var getApi = function() {
-    return 'http://localhost:8080/';
+    return 'https://blooming-scrubland-29869.herokuapp.com';
   }
 
   var getPhotos = function (options, cb) {

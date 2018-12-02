@@ -3,7 +3,7 @@ const http = require('http');
 const Promise = require('bluebird');
 const cloudinary = require('cloudinary').v2;
 
-const port = process.env.APP_PORT || 8080;
+const port = process.env.PORT || 8080;
 const apiKey = process.env.CLOUDINARY_API_KEY || '';
 const apiSecret = process.env.CLOUDINARY_API_SECRET || '';
 const cloudName = 'imaggg';
