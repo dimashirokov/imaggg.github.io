@@ -20,7 +20,7 @@ const apiResponse = (req, res, result) => {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Header': 'Origin, X-Requested-With, Content-Type, Accept'
     });
-
+    
     res.end(JSON.stringify(result));
 }
 
@@ -73,7 +73,8 @@ const getPhotos = (req, res) => new Promise((resolve, reject) => {
         resource_type: 'image',
         type: 'upload',
         tags: true,
-        context: true
+        context: true,
+        max_results: 500
     }, (err, result) => {
         if(err) {
             res.writeHead(500);
@@ -88,9 +89,9 @@ const getPhotos = (req, res) => new Promise((resolve, reject) => {
                 w: r.width,
                 h: r.height,
                 src: r.secure_url,
+                thumb: r.secure_url.replace('/image/upload/', '/image/upload/h_500/'),
                 tags: r.tags || [],
-                context: r.context || null,
-                thumb: null
+                context: r.context || null
             }
         });
 
