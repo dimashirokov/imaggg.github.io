@@ -382,6 +382,14 @@ li {
   top: 3.14vw;
 }
 
+.hash_box li {
+  cursor: pointer;
+}
+
+.hash_box li:before {
+  content: '#'
+}
+
 .hash {
   text-transform: lowercase;
   margin-right: 4.39vw;

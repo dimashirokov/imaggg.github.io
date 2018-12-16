@@ -13,10 +13,14 @@
   <meta property="og:image" content="https://c1.staticflickr.com/5/4375/37158438046_8d1cc6fea3_n.jpg" />
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.woff.min.css" rel="stylesheet" type="text/css">
-  <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
 
+  <link rel="stylesheet" href="../plugins/PhotoSwipe/photoswipe.css"> 
+  <link rel="stylesheet" href="../plugins/PhotoSwipe/default-skin/default-skin.css"> 
+
+  <link href="../plugins/flexbin.css" rel="stylesheet">
+
+  <script src="../plugins/PhotoSwipe/photoswipe.min.js"></script> 
+  <script src="../plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script> 
 
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="35mm photoblog">
@@ -41,36 +45,80 @@
   <div class="album_nav_in h2">
     <p class="h1"><a href="../index.html">...</a>/<a href="../albums.html">Albums</a>/Sasha</p>
   </div>
-  <div class="album_in_box">
-    <div data-nanogallery2='{
-                "userID": "145417732@N05",
-                "kind": "flickr",
-                "thumbnailWidth": "150",
-                "thumbnailHeight": "220",
-                "viewerToolbar":{
-                    "standard": "infoButton, linkOriginalButton"
-                },
-                "viewerTools": {
-                    "topLeft": "pageCounter",
-                    "topRight": "closeButton"
-                },
-                "thumbnailBorderBottom": 10,
-                "thumbnailBorderRight": 20,
-                "thumbnailLabel": {
-                  "position": "overImageOnMiddle",
-                  "display": false
-                },
-                "allowHTMLinData": true,
-                "thumbnailAlignment": "center",
-                "gallerySorting": "titleasc",
-                "displayBreadcrumb": false,
-                "breadcrumbAutoHideTopLevel": false,
-                "breadcrumbOnlyCurrentLevel": false
-              }'>
+  <div class="scene_box"> 
+
+    <div class="spinner" id="loader">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+
+    <div class="flexbin flexbin-margin" id="imaggg-gallery" data-gallery-album="sasha"></div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
   </div>
   </div>
 	<div class="footwrap">
 		<div class="copy h3">Copyright &copy; 2018 imaggg</div>
 	</div>
 </body>
+
+<script src="../app.js"></script> 
 </html>

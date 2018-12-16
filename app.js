@@ -39,8 +39,11 @@ var ImagggApi = (function($) {
 
 var App = (function($) {
   var gallerySelector = '#imaggg-gallery';
+  var galleryTagsSelector = '#imaggg-gallery-tags';
   var galleryPhotoSelector = '.imaggg-gallery-photo';
   var galleryConfig = {};
+
+  var galleryFilteredPhotos = {};
 
   var pswpItems = [];
   var pswpElement = document.querySelectorAll('.pswp')[0];
@@ -52,9 +55,45 @@ var App = (function($) {
   galleryConfig.tags = $(gallerySelector).data('gallery-tags');
 
   var photoContainer = function(options) {
+    var tags = options.tags && Array.isArray(options.tags)
+      ? options.tags.join(',')
+      : '';
+
     return '<a href="#" class="imaggg-gallery-photo" data-id="' + options.id 
       + '" data-index="' + options.index 
-      + '"><img src="' + options.thumb + '"/></a>'
+      + '" data-tags="'  + tags
+      + '"><img src="'   + options.thumb + '"/></a>'
+  }
+
+  var tagFilter = function() {
+    var tag = $(this).text();
+
+    if($(this).attr('active')) {
+      Object.keys(galleryFilteredPhotos).forEach(function(photo) {
+        $(galleryFilteredPhotos[photo]).show('slow');
+      });
+
+      galleryFilteredPhotos = {};
+      $(this).removeAttr('active');
+
+      return;
+    } else {
+      $(this).attr('active', 'true');
+    }
+
+    $(gallerySelector + '>a' + galleryPhotoSelector).each(function() {
+      var photoTags = ($(this).data('tags') || '').toLowerCase();
+
+      if(photoTags == '' || photoTags.indexOf(tag) == -1) {
+        var photoId = $(this).data('id');
+
+        galleryFilteredPhotos[photoId] = this;
+        console.log(photoId);
+        $(this).hide('slow');
+      } else {
+        $(this).show('slow');
+      }
+    });
   }
 
   ImagggApi.photos(galleryConfig, function(photos) {
@@ -90,4 +129,7 @@ var App = (function($) {
     $('#loader').remove();
   });
 
+  $(galleryTagsSelector + '>li').each((function() {
+    $(this).bind('click', tagFilter);
+  }));
 })(jQuery);

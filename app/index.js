@@ -4,9 +4,10 @@ const Promise = require('bluebird');
 const cloudinary = require('cloudinary').v2;
 
 const port = process.env.PORT || 8080;
-const apiKey = process.env.CLOUDINARY_API_KEY || '';
-const apiSecret = process.env.CLOUDINARY_API_SECRET || '';
+const apiKey = process.env.CLOUDINARY_API_KEY || '527694149739364';
+const apiSecret = process.env.CLOUDINARY_API_SECRET || 'J6OIA08V1N8N7o3sAa8u6NK61Bg';
 const cloudName = 'imaggg';
+const nsfwFolder = 'renhang';
 
 cloudinary.config({
     cloud_name: cloudName,
@@ -66,21 +67,18 @@ const getAlbums = (req, res) => new Promise((resolve, reject) => {
 });
 
 const getPhotos = (req, res) => new Promise((resolve, reject) => {
-    let album = req.qs.query.album || '';
+    let search = `NOT folder=${nsfwFolder}/*`;
 
-    cloudinary.api.resources({
-        prefix: album, 
-        resource_type: 'image',
-        type: 'upload',
-        tags: true,
-        context: true,
-        max_results: 500
-    }, (err, result) => {
-        if(err) {
-            res.writeHead(500);
-            res.end();
-        }
+    if(req.qs.query.album) {
+        search = 'folder=' + req.qs.query.album;
+    }
 
+    cloudinary.search
+      .expression(search)
+      .with_field('context')
+      .with_field('tags')
+      .execute()
+      .then(result => {
         let resp = result.resources.map(r => {
             return {
                 id: r.public_id,
@@ -96,12 +94,22 @@ const getPhotos = (req, res) => new Promise((resolve, reject) => {
         });
 
         return apiResponse(req, res, resp);
+    })
+    .catch(err => {
+        if(err) {
+            res.writeHead(500);
+            res.end();
+        }
     });
 });
 
 const routes = {
     '/albums.json': getAlbums,
     '/photos.json': getPhotos,
+    '/heroku-standup.png': (req, res) => {
+        res.writeHead(200, { 'Content-Type': 'image/gif' });
+        res.end(new Buffer("R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", 'base64'));
+    },
     '_': (req, res) => {
         res.writeHead(404);
         res.end();
