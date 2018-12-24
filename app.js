@@ -65,35 +65,44 @@ var App = (function($) {
       + '"><img src="'   + options.thumb + '"/></a>'
   }
 
-  var tagFilter = function() {
-    var tag = $(this).text();
+  var tagFilter = function(filter) {
+    return function() {
+      var tag = $(this).text();
 
-    if($(this).attr('active')) {
-      Object.keys(galleryFilteredPhotos).forEach(function(photo) {
-        $(galleryFilteredPhotos[photo]).show('slow');
-      });
+      if($(this).attr('active')) {
+        Object.keys(galleryFilteredPhotos).forEach(function(photo) {
+          $(galleryFilteredPhotos[photo]).show('slow');
+        });
 
-      galleryFilteredPhotos = {};
-      $(this).removeAttr('active');
+        galleryFilteredPhotos = {};
+        $(this).removeAttr('active');
 
-      return;
-    } else {
-      $(this).attr('active', 'true');
-    }
-
-    $(gallerySelector + '>a' + galleryPhotoSelector).each(function() {
-      var photoTags = ($(this).data('tags') || '').toLowerCase();
-
-      if(photoTags == '' || photoTags.indexOf(tag) == -1) {
-        var photoId = $(this).data('id');
-
-        galleryFilteredPhotos[photoId] = this;
-        console.log(photoId);
-        $(this).hide('slow');
+        return;
       } else {
-        $(this).show('slow');
+        filter
+        .filter(function() {
+          return $(this).text() !== tag;
+        })
+        .each(function() {
+          $(this).removeAttr('active');
+        });
+
+        $(this).attr('active', 'true');
       }
-    });
+
+      $(gallerySelector + '>a' + galleryPhotoSelector).each(function() {
+        var photoTags = ($(this).data('tags') || '').toLowerCase();
+
+        if(photoTags == '' || photoTags.indexOf(tag) == -1) {
+          var photoId = $(this).data('id');
+
+          galleryFilteredPhotos[photoId] = this;
+          $(this).hide('slow');
+        } else {
+          $(this).show('slow');
+        }
+      });
+    }
   }
 
   ImagggApi.photos(galleryConfig, function(photos) {
@@ -130,6 +139,6 @@ var App = (function($) {
   });
 
   $(galleryTagsSelector + '>li').each((function() {
-    $(this).bind('click', tagFilter);
+    $(this).bind('click', tagFilter($(galleryTagsSelector + '>li')));
   }));
 })(jQuery);

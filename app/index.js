@@ -4,16 +4,19 @@ const Promise = require('bluebird');
 const cloudinary = require('cloudinary').v2;
 
 const port = process.env.PORT || 8080;
-const apiKey = process.env.CLOUDINARY_API_KEY || '527694149739364';
-const apiSecret = process.env.CLOUDINARY_API_SECRET || 'J6OIA08V1N8N7o3sAa8u6NK61Bg';
+const apiKey = process.env.CLOUDINARY_API_KEY;
+const apiSecret = process.env.CLOUDINARY_API_SECRET;
 const cloudName = 'imaggg';
 const nsfwFolder = 'renhang';
+const compressPerc = 0.8;
 
 cloudinary.config({
     cloud_name: cloudName,
     api_key: apiKey,
     api_secret: apiSecret
 });
+
+const compressed = s => s * compressPerc | 0;
     
 const apiResponse = (req, res, result) => {
     res.writeHead(200, {
@@ -77,6 +80,7 @@ const getPhotos = (req, res) => new Promise((resolve, reject) => {
       .expression(search)
       .with_field('context')
       .with_field('tags')
+      .max_results(500)
       .execute()
       .then(result => {
         let resp = result.resources.map(r => {
@@ -86,7 +90,7 @@ const getPhotos = (req, res) => new Promise((resolve, reject) => {
                 ts: r.created_at,
                 w: r.width,
                 h: r.height,
-                src: r.secure_url,
+                src: r.secure_url.replace('/image/upload/', '/image/upload/q_auto:good/'),
                 thumb: r.secure_url.replace('/image/upload/', '/image/upload/h_500/'),
                 tags: r.tags || [],
                 context: r.context || null
